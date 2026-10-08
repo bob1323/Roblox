@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ROBLOX 2016 • AWESOME 2016 FORKITHON</title>
+<style>
+:root{--blue:#0086d1;--blue2:#006aa8;--dark:#202020;--panel:#f4f4f4;--line:#c9c9c9;--text:#333;--green:#45a049}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#dfe3e6}
+body{background:linear-gradient(#eef1f3 0 120px,#dfe3e6 120px 100%);overflow-x:hidden}
+button,input{font:inherit}.top{height:64px;background:linear-gradient(#1597df,#0074bb);border-bottom:4px solid #005b91;display:flex;align-items:center;padding:0 22px;color:white;box-shadow:0 2px 5px #0004}
+.logo{font-weight:900;font-style:italic;font-size:31px;letter-spacing:-2px;text-shadow:2px 2px 0 #005b91;user-select:none}
+.logo span{font-size:12px;letter-spacing:0;font-style:normal;margin-left:10px;opacity:.8}
+.nav{margin-left:auto;display:flex;gap:6px}.nav button{border:1px solid #005b91;background:#0079bd;color:#fff;padding:9px 15px;border-radius:3px;cursor:pointer}.nav button:hover{background:#1597df}
+.wrap{max-width:1180px;margin:24px auto;padding:0 18px}.hero{background:#fff;border:1px solid var(--line);box-shadow:0 2px 7px #0002;padding:20px 24px;display:flex;gap:24px;align-items:center}
+.avatar{width:104px;height:104px;background:linear-gradient(135deg,#e9e9e9 50%,#d1d1d1 50%);border:1px solid #aaa;position:relative;flex:none;overflow:hidden}
+.avatar:before{content:"";position:absolute;width:46px;height:46px;background:#f3b27d;left:29px;top:12px;border:2px solid #8d5a3c}
+.avatar:after{content:"";position:absolute;width:62px;height:46px;background:#1684c1;left:20px;top:58px;border:2px solid #12587c}
+h1{margin:0 0 5px;font-size:27px;color:#222}.sub{margin:0 0 13px;color:#777}.status{display:inline-block;background:#e8f6e9;color:#287c2d;border:1px solid #a7d7aa;padding:5px 9px;border-radius:3px;font-size:13px;font-weight:bold}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-top:18px}.panel{background:#fff;border:1px solid var(--line);box-shadow:0 2px 5px #0001}.title{background:linear-gradient(#fafafa,#e8e8e8);border-bottom:1px solid var(--line);padding:11px 14px;font-weight:bold;font-size:17px;color:#333}.body{padding:15px}
+.games{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.game{border:1px solid #ccc;background:#fafafa;cursor:pointer;transition:.12s}.game:hover{border-color:#888;transform:translateY(-1px);box-shadow:0 2px 5px #0002}.thumb{height:112px;background:#87b9d8;position:relative;overflow:hidden}.thumb:before{content:"";position:absolute;inset:45% 0 0;background:#5e9b45}.thumb:after{content:"";position:absolute;width:85px;height:55px;background:#c7c7c7;left:35%;bottom:8px;box-shadow:20px -25px 0 -8px #aaa,42px -42px 0 -16px #888}.game:nth-child(2) .thumb{background:#7c9bc0}.game:nth-child(3) .thumb{background:#d7b36a}.game:nth-child(4) .thumb{background:#8d7ab4}.gameinfo{padding:9px 10px}.gameinfo b{display:block;color:#222}.gameinfo small{color:#888}
+.play{display:block;width:100%;margin-top:9px;background:linear-gradient(#5fc45f,#36953b);border:1px solid #26742b;color:#fff;font-weight:bold;padding:8px;border-radius:3px;cursor:pointer}.play:hover{filter:brightness(1.07)}
+.side-row{display:flex;justify-content:space-between;border-bottom:1px solid #ddd;padding:10px 2px;font-size:14px}.side-row:last-child{border-bottom:0}.muted{color:#888}.bigbtn{width:100%;padding:11px;margin-top:10px;border:1px solid #aaa;background:linear-gradient(#fff,#e7e7e7);cursor:pointer;border-radius:3px}.bigbtn:hover{background:#fff}
+.console{font-family:Consolas,monospace;background:#1d1d1d;color:#a9e7a9;border-radius:2px;padding:10px;min-height:115px;font-size:12px;white-space:pre-wrap}.settings{display:none;margin-top:18px}.settings input{width:100%;padding:9px;border:1px solid #aaa}.footer{text-align:center;color:#888;font-size:12px;padding:28px}
+.notice{background:#fff7d6;border:1px solid #e1cb72;padding:10px;margin-bottom:12px;font-size:13px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.hero{align-items:flex-start}.games{grid-template-columns:1fr}.nav span{display:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="logo">ROBLOX<span>2016 CLIENT FRONTEND</span></div>
+  <nav class="nav"><button onclick="showTab('home')">HOME</button><button onclick="showTab('settings')">SETTINGS</button></nav>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="avatar"></div>
+  <div><h1>AWESOME 2016 FORKITHON</h1><p class="sub">old roblox. old client. no modern roblox nonsense.</p><span class="status" id="status">CLIENT READY</span></div>
+</section>
+<div id="home" class="grid">
+  <section class="panel">
+    <div class="title">GAMES</div><div class="body">
+      <div class="notice">this page is designed to sit in front of the self-contained 2016 client. pick a place, then hit play.</div>
+      <div class="games">
+        <article class="game" onclick="play('2016 Baseplate','baseplate')"><div class="thumb"></div><div class="gameinfo"><b>2016 Baseplate</b><small>classic test place</small><button class="play">PLAY</button></div></article>
+        <article class="game" onclick="play('Crossroads','crossroads')"><div class="thumb"></div><div class="gameinfo"><b>Crossroads</b><small>old-school combat map</small><button class="play">PLAY</button></div></article>
+        <article class="game" onclick="play('Happy Home','happyhome')"><div class="thumb"></div><div class="gameinfo"><b>Happy Home</b><small>classic roblox place</small><button class="play">PLAY</button></div></article>
+        <article class="game" onclick="play('Client Test','test')"><div class="thumb"></div><div class="gameinfo"><b>Client Test</b><small>local client testing</small><button class="play">PLAY</button></div></article>
+      </div>
+    </div>
+  </section>
+  <aside class="panel">
+    <div class="title">CLIENT</div><div class="body">
+      <div class="side-row"><span>Version</span><b>2016</b></div>
+      <div class="side-row"><span>Server</span><span id="server">localhost</span></div>
+      <div class="side-row"><span>Mode</span><span>self-contained</span></div>
+      <button class="bigbtn" onclick="connect()">CONNECT TO CLIENT</button>
+      <button class="bigbtn" onclick="showTab('settings')">CLIENT SETTINGS</button>
+      <div style="margin-top:14px" class="console" id="console">[frontend] loaded
+[frontend] waiting for client...
+</div>
+    </div>
+  </aside>
+</div>
+<section id="settings" class="panel settings">
+ <div class="title">SETTINGS</div><div class="body">
+  <label>Client bridge URL</label><input id="bridge" value="http://127.0.0.1:53640">
+  <button class="bigbtn" onclick="saveSettings()">SAVE SETTINGS</button>
+  <p class="muted">If the native client exposes a local HTTP bridge, this frontend can ping it. The Play button also tries the roblox2016:// protocol so a packaged client can launch directly.</p>
+ </div>
+</section>
+<div class="footer">AWESOME 2016 FORKITHON • self-contained frontend • built for the 2016 revival project</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+function log(s){$('console').textContent+='\n'+s;$('console').scrollTop=$('console').scrollHeight}
+function showTab(t){$('home').style.display=t==='home'?'grid':'none';$('settings').style.display=t==='settings'?'block':'none'}
+function saveSettings(){localStorage.setItem('rbxBridge',$('bridge').value);log('[frontend] saved bridge: '+$('bridge').value);showTab('home')}
+async function connect(){
+ const url=localStorage.getItem('rbxBridge')||$('bridge').value;
+ $('server').textContent=url.replace(/^https?:\/\//,'');
+ log('[frontend] connecting to '+url+' ...');
+ try{const r=await fetch(url+'/status',{mode:'cors'}); if(r.ok){$('status').textContent='CLIENT CONNECTED';$('status').style.background='#e8f6e9';log('[client] bridge responded OK')}else throw 0}
+ catch(e){$('status').textContent='CLIENT NOT DETECTED';$('status').style.background='#ffe9e9';log('[client] no bridge detected (this is OK if using the protocol launcher)')}
+}
+function play(name,id){
+ log('[frontend] launching '+name+' ('+id+')');
+ $('status').textContent='LAUNCHING '+name.toUpperCase();
+ const bridge=localStorage.getItem('rbxBridge')||$('bridge').value;
+ try{window.location.href='roblox2016://play?place='+encodeURIComponent(id)+'&server='+encodeURIComponent(bridge)}catch(e){}
+ setTimeout(()=>{$('status').textContent='CLIENT READY'},1800);
+}
+(function(){const b=localStorage.getItem('rbxBridge');if(b)$('bridge').value=b})();
+</script>
+</body>
+</html>
