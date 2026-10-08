@@ -6,9 +6,9 @@
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/P0L3NARUBA/roblox-2016-source-code/master">
 </p>
 
-# Roblox 2016 Source Code
-This source originates from **[robloxsrc.zip](https://mega.nz/file/mrxkSRRK#n5YmV1iPUPZCfiI6IDWkT3eDq9k3-yA7rl_hURked8Y)** that was spinning around but its hard to find these days.<br>
-After a long effort, this repository has been brought to you on github with lots of changes!<br>
+# AWESOME 2016 FORKITHON
+This is a community fork of the **Roblox 2016 Source Code**, focused on continuing development, experimentation, preservation, and making the source more usable.<br>
+This fork builds on the original source and the work already done in this repository, with the goal of seeing just how far we can take a 2016 Roblox codebase.<br>
 
 **To build from the source, refer to [BUILDING.md](/BUILDING.md)**<br>
    - Make sure to read them properly so you wont face with any issues.
@@ -87,7 +87,7 @@ See **[CONTRIBUTORS.md](/CONTRIBUTORS.md)**
 - [x] Supporting Newer Mesh Versions
 - [ ] Dark Theme for the Studio
 - [ ] Fixing the In-game Recording
-- [x] Change the Location of unrelated files inside **content\fonts** folder.
+- [x] Change the Location of unrelated files inside **content\\fonts** folder.
 - [ ] Making Bootstrappers don't override our original Roblox files and registries.
    - When this got sorted out, new versions will only include the bootstrappers, so you just have to update the Rocknet in order to upgrade! 
 - [ ] Able to compile the source in MacOS(XCode)
